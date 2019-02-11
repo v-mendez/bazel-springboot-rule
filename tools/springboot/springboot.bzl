@@ -91,7 +91,7 @@ def springboot(name, boot_app_class, deps, resources=[]):
   genjar_rule = native.package_name() + "_genjar"
 
   # Append to the passed deps with the standard Spring Boot deps as a convenience
-  _add_default_deps(deps)
+  #_add_default_deps(deps)
 
   # for resources, assume all files in the standard location unless overridden by config
   if len(resources) == 0:
